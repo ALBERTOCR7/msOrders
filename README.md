@@ -30,7 +30,7 @@ parcial/
 └── README.md              # Documentación general del sistema
 ```
 
-Repositorio: [https://github.com/ALBERTOCR7/parcial/tree/Dev](https://github.com/ALBERTOCR7/parcial/tree/Dev)
+Repositorio: [https://github.com/ALBERTOCR7?tab=repositories](https://github.com/ALBERTOCR7?tab=repositories)
 
 ---
 
@@ -119,9 +119,7 @@ mvn spring-boot:run
 
 ## Colección Postman
 
-Puedes descargar y usar esta colección para probar los endpoints:
-
-👉 [Descargar Ecommerce Postman Collection](./Ecommerce-Postman-Collection.json)
+  Adjuntada en un .json
 
 ---
 
@@ -142,9 +140,7 @@ Puedes descargar y usar esta colección para probar los endpoints:
 
 ---
 
-## Estado final del repositorio Git
 
-Repositorio GitHub: [parcial](https://github.com/ALBERTOCR7/parcial/tree/Dev)
 
 ### Rama utilizada: `Dev`
 
@@ -162,14 +158,13 @@ Dev branch:
 
 ```bash
 # 1. Clonar el repositorio y cambiar de rama
- git clone https://github.com/ALBERTOCR7/parcial.git
+ git clone https://github.com/ALBERTOCR7?tab=repositories
  cd parcial
  git checkout Dev
 
 # 2. Copiar las carpetas y crear el README
  move ../ms-products ./ms-products
  move ../ms-orders ./ms-orders
- mkdir capturas
  notepad README.md  # y pegar contenido
 
 # 3. Subir los cambios
