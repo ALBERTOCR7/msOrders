@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "d89d6d31-f914-4285-b652-99e30349e830",
+		"name": "Ecommerce API",
+		"description": "StartFragmentMicroservicios con productos y órdenesEndFragment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45180248",
+		"_collection_link": "https://josealberto-9751757.postman.co/workspace/97a8796e-9faf-445c-8f5e-82eb9a9236df/collection/45180248-d89d6d31-f914-4285-b652-99e30349e830?action=share&source=collection_link&creator=45180248"
+	},
+	"item": [
+		{
+			"name": "Crear Producto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Laptop\",\r\n  \"description\": \"HP i5 8GB RAM\",\r\n  \"price\": 850.00,\r\n  \"stock\": 10,\r\n  \"category\": \"Electronics\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Productos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Orden",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"client\": \"Guillermo Martínez\",\r\n  \"date\": \"2025-06-20\",\r\n  \"status\": \"CREATED\",\r\n  \"products\": [1],\r\n  \"total\": 850.00\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Órdenes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar Stock desde Orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/orders/stock-check/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"orders",
+						"stock-check",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar Stock desde Orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/orders/stock-check/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"orders",
+						"stock-check",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
